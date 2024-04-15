@@ -1,0 +1,258 @@
+/* CSS BOILER PLATE */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* ***************************** */
+
+/* COLOR PALETTE */
+
+/* ## Colors */
+
+/* ### Primary */
+
+/* - Tomato: hsl(4, 100%, 67%) */
+
+/* ### Neutral */
+
+/* - Dark Slate Grey: hsl(234, 29%, 20%) */
+/* - Charcoal Grey: hsl(235, 18%, 26%) */
+/* - Grey: hsl(231, 7%, 60%) */
+/* - White: hsl(0, 0%, 100%) */
+
+/* ## Typography */
+
+/* ### Body Copy */
+
+/* - Font size (paragraph): 16px */
+
+/* ********************************* */
+/* ********************************* */
+
+/* Start of Design */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling the newsletter container */
+
+.newsletter-container {
+  width: 43%;
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  gap: 4rem;
+}
+
+/* Styling The details section in the newsletter  */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.heading > h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 3rem;
+}
+
+.text p {
+  color: hsl(235, 18%, 26%);
+  font-size: 1rem;
+}
+
+.features {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.box li {
+  color: hsl(235, 18%, 26%);
+  font-size: 1rem;
+}
+.box img {
+  width: 8%;
+}
+
+/* styling Image */
+
+.img-container {
+  width: 100%;
+}
+.img-container .img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Styling the Inbox newsletter */
+.email-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.email-box p {
+  font-size: 0.8rem;
+  color: hsl(234, 29%, 20%);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+input {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 2px solid hsl(235, 18%, 26%);
+}
+
+.email-msg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-msg .invalid {
+  color: hsl(4, 100%, 67%);
+}
+
+/* Styling the subscribe button */
+
+.subscribe-btn {
+  font-size: 1.1rem;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: #fff;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.subscribe-btn:hover {
+  background-color: hsl(4, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* Styling the confirmation box */
+
+.confirmation-box {
+  margin-left: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 2rem;
+}
+
+.confirmation-box img {
+  width: 22%;
+}
+
+.confirmation-message .message {
+  font-size: 4rem;
+  color: hsl(234, 29%, 20%);
+  font-weight: bold;
+}
+
+.confirmation-mail .mail {
+  color: hsl(235, 18%, 26%);
+  font-size: 1rem;
+}
+
+.dismiss-btn {
+  padding: 1rem 0.7rem;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.dismiss-btn:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+/* hide class */
+
+.hide {
+  display: none;
+}
+
+/* error form */
+.error {
+  border: 1px solid hsl(4, 100%, 67%);
+}
+
+/* sucess form */
+.sucess {
+  border: 3px solid rgb(65, 176, 110);
+}
+
+/* Making responsive design */
+
+@media (max-width: 768px) {
+  .newsletter-container {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+    background-color: hsl(4, 49%, 48%);
+  }
+
+  .img-container {
+    width: 55%;
+    text-align: center;
+    height: 100vh;
+  }
+  .img-container .img {
+    max-width: 70%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Styling the confirmation box */
+
+  .confirmation-box {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 2rem;
+  }
+}
